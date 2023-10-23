@@ -13,7 +13,7 @@ import ErrorText from "../ui/error/error_text";
 import CustomInput from "../ui/input";
 import TextReg from "../ui/text/TextReg";
 import TextSemi from "../ui/text/TextSemi";
-import { useSignInMutation } from "@/services/auth.services";
+import { useSignInMutation } from "../../services/auth.services";
 import TextBold from "../ui/text/TextBold";
 
 
