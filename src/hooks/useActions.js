@@ -1,15 +1,12 @@
 import { bindActionCreators } from "@reduxjs/toolkit";
 import { useMemo } from "react";
 import { useDispatch } from "react-redux";
-import authActions from "../app/auth/auth-operation";
-import { extraAuthActions } from "../app/auth/auth-slice";
-
-
-
+import {authActions} from "../store/auth/auth.slice";
+import {contentAction} from "../store/content/content.slice";
 
 const rootActions = {
   ...authActions,
-  ...extraAuthActions,
+  ...contentAction
 
 };
 

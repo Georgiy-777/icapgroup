@@ -10,11 +10,6 @@ const nextConfig = {
       return config;
     },
     
-
-    i18n: {
-      locales: ["en-US", "ru-RU", "uk-UA"],
-      defaultLocale: "uk-UA",
-    },
   };
   
   module.exports = nextConfig;

@@ -24,7 +24,7 @@ const CustomInput = ({title, type, name, placeholder, onChange, onBlur, value, t
                 pos={'absolute'}
                 right={'5%'}
                 cursor={'pointer'}
-                top={'35%'}
+                top={'50%'}
                 onClick={togglePasswordShown}
                     
                 >

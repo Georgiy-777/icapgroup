@@ -1,12 +1,12 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import store, { persistor } from "../app/store";
+import store, { persistor } from "../store/index";
 import theme from "../../styles/theme";
 import "../../styles/globals.css";
 import "modern-normalize/modern-normalize.css";
 // import ErrorProvider from "../Providers/ErrorProvider";
-// import RouterProvider from "../Providers/RouterProvider";
+import RouterProvider from "../provider/RouterProvider";
 import { QueryClient, QueryClientProvider } from 'react-query';
 function MyApp({ Component, pageProps }) {
 
@@ -18,11 +18,11 @@ function MyApp({ Component, pageProps }) {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <ChakraProvider theme={theme}>
-            {/* <RouterProvider>
-              <ErrorProvider> */}
+           {/* <RouterProvider> */}
+              {/* <ErrorProvider>  */}
                 <Component {...pageProps} />
-              {/* </ErrorProvider>
-            </RouterProvider> */}
+             {/* </ErrorProvider> */}
+            {/* </RouterProvider>  */}
           </ChakraProvider>
         </PersistGate>
       </Provider>
