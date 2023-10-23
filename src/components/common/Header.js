@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image } from '@chakra-ui/react';
 import React from 'react';
 import TextSemi from '../ui/text/TextSemi';
-import { useActions } from '@/hooks/useActions';
+import { useActions } from '../../hooks/useActions';
 import TextBold from '../ui/text/TextBold';
 
 const Header = () => {

@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import createWebStorage from 'redux-persist/lib/storage/createWebStorage';
 import { persistReducer, persistStore } from 'redux-persist';
-import { icapgroupApi } from '@/services/apiService';
+import { icapgroupApi } from '../services/apiService/index';
 import authSlice from './auth/auth.slice';
 // import projectsSlice from './projects/projects.slice';
 // import profileSlice from './profile/profile.slice';

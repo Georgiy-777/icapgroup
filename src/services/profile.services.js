@@ -1,4 +1,3 @@
-import { profileAction } from '@/store/profile/profile.slice';
 import { axiosService } from './apiService/axiosService';
 import { notifixApi } from './apiService';
 import axios from 'axios';
